@@ -31,3 +31,27 @@ function setShare(){
     ]
   });
 }
+
+function goKakao(){
+Kakao.init("d3f0847972aa49b92bf926aad2ad4666");
+Kakao.Link.sendDefault({
+    objectType: "feed",
+    content: {
+        title: "십이간지 연애유형",
+        description: "십이간지 연애유형 결과",
+        imageUrl: "img/share.png",
+        link: {
+            mobileWebUrl: "https://warm-crostata-a6dd43.netlify.app" ,
+            webUrl: "https://warm-crostata-a6dd43.netlify.app",
+        },
+    },
+    buttons: [
+        {
+            title: "웹으로 보기",
+            link: {
+                mobileWebUrl: "https://warm-crostata-a6dd43.netlify.app",
+                webUrl: "https://warm-crostata-a6dd43.netlify.app",
+            },
+        },
+    ],
+});}
