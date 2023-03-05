@@ -1,0 +1,50 @@
+#qna{
+    display: none;
+}
+
+.qBox{
+    background-color: #f7f7f7;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 24px;
+    width: 80%;
+} 
+
+.answerList{
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    /* 버튼을 1줄에 1개씩만 보일 수 있도록 */
+    display: block; 
+    width: 80%;
+    border: 0px;
+}
+
+/* 버튼위에 커서가 올려지거나 버튼이 클릭되었을때 */
+.answerList:hover, .answerList:focus{
+    background-color: darksalmon;
+    color: whitesmoke;
+}
+
+.status{
+    height: 20px;
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.statusBar {
+    height: 100%;
+    border-radius: 20px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffa84c+0,ff7b0d+100;Orange+3D */
+    background: #ffa84c;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #ffa84c 0%, #ff7b0d 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffa84c 0%,#ff7b0d 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffa84c 0%,#ff7b0d 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffa84c', endColorstr='#ff7b0d',
+    GradientType=0); 
+    /* IE6-9 */ 
+}
