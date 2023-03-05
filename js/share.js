@@ -1,4 +1,4 @@
-const url = 'https://fancy-beignet-ad510c.netlify.app/';
+const url = 'https://warm-crostata-a6dd43.netlify.app/';
 
 function setShare(){
   var resultImg = document.querySelector('#resultImg');
