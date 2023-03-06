@@ -49,19 +49,19 @@ Kakao.Link.sendDefault({
     objectType: "feed",
     content: {
         title: "십이간지 연애유형",
-        description: shareDes,
-        imageUrl: shareImage,
+        description: "십이간지 연애유형 결과",
+        imageUrl: "img/share.png",
         link: {
-            mobileWebUrl: shareURL,
-            webUrl: shareURL,
+            mobileWebUrl: "https://warm-crostata-a6dd43.netlify.app" ,
+            webUrl: "https://warm-crostata-a6dd43.netlify.app",
         },
     },
     buttons: [
         {
             title: "웹으로 보기",
             link: {
-                mobileWebUrl: shareURL,
-                webUrl: shareURL,
+                mobileWebUrl: "https://warm-crostata-a6dd43.netlify.app",
+                webUrl: "https://warm-crostata-a6dd43.netlify.app",
             },
         },
     ],
