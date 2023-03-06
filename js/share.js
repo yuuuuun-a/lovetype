@@ -34,12 +34,12 @@ const url = 'https://warm-crostata-a6dd43.netlify.app/';
 
 
 
-    var resultImg = document.querySelector('#resultImg');
-    var resultAlt = resultImg.firstElementChild.lastElementChild; // ALT 속성 지정
-    const shareTitle = '십이간지 연애유형 결과';
-    const shareDes = infoList[resultAlt].name;
-    const shareImage = url+'img/imgae-'+resultAlt+'.png';
-    const shareURL = url+'page.result-'+resultAlt+'.html';
+    // var resultImg = document.querySelector('#resultImg');
+    // var resultAlt = resultImg.firstElementChild.lastElementChild; // ALT 속성 지정
+    // const shareTitle = '십이간지 연애유형 결과';
+    // const shareDes = infoList[resultAlt].name;
+    // const shareImage = url+'img/imgae-'+resultAlt+'.png';
+    // const shareURL = url+'page.result-'+resultAlt+'.html';
     
 
 
