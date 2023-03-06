@@ -39,10 +39,7 @@ function setShare(){
     const shareDes = infoList[resultAlt].name;
     const shareImage = url+'img/imgae-'+resultAlt+'.png';
     const shareURL = url+'page.result-'+resultAlt+'.html';
-    goKakao();
-}
 
-function goKakao(){
 Kakao.init("d3f0847972aa49b92bf926aad2ad4666");
 Kakao.Link.sendDefault({
     objectType: "feed",
