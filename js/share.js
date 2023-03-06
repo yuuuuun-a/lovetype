@@ -32,15 +32,14 @@ const url = 'https://warm-crostata-a6dd43.netlify.app/';
 //   });
 // }
 
-//!! function setShare(){
-//     var resultImg = document.querySelector('#resultImg');
-//     var resultAlt = resultImg.firstElementChild.lastElementChild; // ALT 속성 지정
-//     const shareTitle = '십이간지 연애유형 결과';
-//     const shareDes = infoList[resultAlt].name;
-//     const shareImage = "url+'img/image-'+resultAlt+'.png'";
-//     const shareURL = url+'page.result-'+resultAlt+'.html';
-//     goKakao();
-// }
+
+    var resultImg = document.querySelector('#resultImg');
+    var resultAlt = resultImg.firstElementChild.lastElementChild; // ALT 속성 지정
+    const shareTitle = '십이간지 연애유형 결과';
+    const shareDes = infoList[resultAlt].name;
+    const shareImage = url + 'img/image-' + resultAlt + '.png';
+    const shareURL = url + 'page.result-' + resultAlt + '.html';
+
 
 function goKakao(){
 Kakao.init("d3f0847972aa49b92bf926aad2ad4666");
@@ -48,19 +47,19 @@ Kakao.Link.sendDefault({
     objectType: "feed",
     content: {
         title: "십이간지 연애유형 결과",
-        description: infoList[document.querySelector('#resultImg').firstElementChild.lastElementChild].name,
-        imageUrl: "https://warm-crostata-a6dd43.netlify.app/img/image-" + document.querySelector('#resultImg').firstElementChild.lastElementChild + ".png"  ,
+        description: shareDes,
+        imageUrl: shareImage,
         link: {
-            mobileWebUrl: "https://warm-crostata-a6dd43.netlify.app/page.result-" + document.querySelector('#resultImg').firstElementChild.lastElementChild + ".html" ,
-            webUrl: "https://warm-crostata-a6dd43.netlify.app/page.result-" + document.querySelector('#resultImg').firstElementChild.lastElementChild + ".html",
+            mobileWebUrl: shareURL ,
+            webUrl: shareURL,
         },
     },
     buttons: [
         {
             title: "웹으로 보기",
             link: {
-                mobileWebUrl: "https://warm-crostata-a6dd43.netlify.app/page.result-" + document.querySelector('#resultImg').firstElementChild.lastElementChild + ".html",
-                webUrl: "https://warm-crostata-a6dd43.netlify.app/page.result-" + document.querySelector('#resultImg').firstElementChild.lastElementChild + ".html",
+                mobileWebUrl: shareURL,
+                webUrl: shareURL,
             },
         },
     ],
