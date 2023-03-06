@@ -49,18 +49,18 @@ Kakao.Link.sendDefault({
     content: {
         title: "십이간지 연애유형 결과",
         description: infoList[document.querySelector('#resultImg').firstElementChild.lastElementChild].name,
-        imageUrl: url + "img/image-" + resultImg.firstElementChild.lastElementChild + ".png"  ,
+        imageUrl: "https://warm-crostata-a6dd43.netlify.app/img/image-" + document.querySelector('#resultImg').firstElementChild.lastElementChild + ".png"  ,
         link: {
-            mobileWebUrl: url + "page.result-" + resultImg.firstElementChild.lastElementChild + ".html" ,
-            webUrl: url + "page.result-" + resultImg.firstElementChild.lastElementChild + ".html",
+            mobileWebUrl: "https://warm-crostata-a6dd43.netlify.app/page.result-" + document.querySelector('#resultImg').firstElementChild.lastElementChild + ".html" ,
+            webUrl: "https://warm-crostata-a6dd43.netlify.app/page.result-" + document.querySelector('#resultImg').firstElementChild.lastElementChild + ".html",
         },
     },
     buttons: [
         {
             title: "웹으로 보기",
             link: {
-                mobileWebUrl: url + "page.result-" + resultImg.firstElementChild.lastElementChild + ".html",
-                webUrl: url + "page.result-" + resultImg.firstElementChild.lastElementChild + ".html",
+                mobileWebUrl: "https://warm-crostata-a6dd43.netlify.app/page.result-" + document.querySelector('#resultImg').firstElementChild.lastElementChild + ".html",
+                webUrl: "https://warm-crostata-a6dd43.netlify.app/page.result-" + document.querySelector('#resultImg').firstElementChild.lastElementChild + ".html",
             },
         },
     ],
